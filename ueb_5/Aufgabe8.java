@@ -5,7 +5,7 @@ public class Aufgabe8 {
 	
 	public static boolean palindrom(String p){
 		System.out.println(p);
-		while (p.length()>0){
+		if (p.length()>0){
 			if (p.charAt(0)==p.charAt((p.length()-1))){
 				return palindrom(p.substring(1,(p.length()-1)));
 			} else {
