@@ -29,8 +29,14 @@ public class QMatrix {
 		}//for i
 	}
 	
-	void add(QMatrix q){
-		
+	QMatrix add(QMatrix q){
+		int[][] erg = new int[feld.length][feld.length];
+		for (int i = 0; i<feld.length; i++){
+			for (int j = 0; j<feld[i].length; j++){
+				this.feld[i][j] += q.feld[i][j];
+			}//for j
+		}//for i
+		return this;
 	}
 }
 

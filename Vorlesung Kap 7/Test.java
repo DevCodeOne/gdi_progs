@@ -12,8 +12,12 @@ public class Test{
 		matrix.set(1,10);
 		matrix.print();
 		
-		//QMatrix matrix2 = ....
-		//QMatrix matrix3 = matrix1.add(matrix2);
+		QMatrix matrix2 = new QMatrix();
+		matrix2.allocate(n);
+		matrix2.set(1);
+		QMatrix matrix3 = matrix.add(matrix2);
+		matrix3.print();
+		matrix.print();
 		
 	}
 	
