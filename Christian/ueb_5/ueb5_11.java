@@ -1,6 +1,7 @@
 import java.util.Scanner; 
 
 public class ueb5_11 {
+
 	static int anzParteien, anzSitze; 
 	static int [] anzStimmenPartei; 
 	static int [] anzSitzePartei; 

@@ -40,7 +40,7 @@ public class ueb6_2 {
 			space--;
 
 			for (int j = 0; j < dreieck[i].length; j++) {
-				System.out.printf("%-3d", dreieck[i][j]);
+				System.out.printf("%-2d", dreieck[i][j]);
 			}
 			System.out.println("");
 		}	
