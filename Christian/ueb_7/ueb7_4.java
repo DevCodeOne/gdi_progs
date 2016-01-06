@@ -1,12 +1,20 @@
 public class ueb7_4 {
 
-	public static void main(String [] args) throws Exception {
+	public static void main(String [] args) {
 		Stack stack = new Stack(2); 
-		stack.push(2); 
-		stack.push(4); 
 
-		System.out.print(stack.pop()); 
-		System.out.print(stack.pop()); 
+		try {
+			stack.push(2); 
+			stack.push(4); 
+
+			System.out.print(stack.pop()); 
+			System.out.print(stack.pop()); 
+			stack.pop();
+		} catch (StackEmpty e) {
+			System.err.println(e.getMessage());
+		} catch (StackFull e) {
+			System.err.println(e.getMessage());
+		}
 
 		System.out.println();
 	}
@@ -23,7 +31,7 @@ public class ueb7_4 {
 		}
 
 		public Stack() {
-			stack = new int[DEFAULT_STACK_SIZE];
+			this(DEFAULT_STACK_SIZE);
 		}
 
 		public void push(int element) throws StackFull {

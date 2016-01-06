@@ -19,7 +19,9 @@ public class ueb7_2 {
 		System.out.println("+------+----------------+----------------+");
 
 		for (int i = 0; i < 6; i++) {
-			System.out.printf("| %-4d | %-14d | %-14d |\n", i + 1, funk_1[i], funk_2[i]);
+			System.out.printf("| %-4d | %-14f | %-14f |\n", i + 1, 
+					funk_1[i] / (double) NUMBER_OF_TESTS, 
+					funk_2[i] / (double) NUMBER_OF_TESTS);
 		}
 
 		double max_dif_funk_1 = Math.abs((funk_1[0] / (double) NUMBER_OF_TESTS) - EVENLY_SPREAD_VALUE);
@@ -48,6 +50,10 @@ public class ueb7_2 {
 	}
 
 	static int wuerfel_schlecht() {
-		return (int) (Math.min((Math.random() * NUMBERS * 2), NUMBERS - 1)) + 1;
+		//return (int) (Math.min((Math.random() * NUMBERS * 2), NUMBERS - 1)) + 1; // methode 1
+		//return (int) (((Math.random() * (NUMBERS + 3))) % NUMBERS) + 1; // methode 2
+		int [] zahlen = {1, 1, 1, 2, 2, 3, 4, 5, 6, 6}; // methode 3
+		int index = (int) (Math.random() * zahlen.length);
+		return zahlen[index];
 	}
 }
