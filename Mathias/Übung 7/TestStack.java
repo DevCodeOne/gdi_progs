@@ -4,11 +4,11 @@ public class TestStack {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		
-	 	Stack s;
+	 	Stack<Integer> s;
 	 	if (args.length >= 1){		
-	 		s = new Stack(Integer.parseInt(args[0]));
+	 		s = new Stack<Integer>(Integer.parseInt(args[0]));
 	 	} else {
-	 		s = new Stack();
+	 		s = new Stack<Integer>();
 	 	}
 		
 	 	do {
