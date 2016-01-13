@@ -9,8 +9,8 @@ public class ueb7_9 {
 	}
 
 	public static int sichere_division(int dividend, int teiler) throws ArithmeticException {
-		if (teiler == 0) 
-			throw new ArithmeticException("Nicht durch null");
+		//if (teiler == 0) 
+		//	throw new ArithmeticException("Nicht durch null"); doppelt wird vom system bereits geworfen
 		
 		return dividend / teiler;
 	}

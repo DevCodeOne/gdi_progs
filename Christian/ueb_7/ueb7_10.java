@@ -2,7 +2,7 @@ public class ueb7_10 {
 
 	public static void main(String [] args) {
 		
-		for (int i = 0; i < 100000; i++) {
+		for (int i = 0; i < 100; i++) { // kleine zahlen zum zählen
 			try {
 				random_zahl();
 			} catch (IstNull e) {
