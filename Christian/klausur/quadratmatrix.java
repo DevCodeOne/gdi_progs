@@ -33,6 +33,7 @@ public class quadratmatrix {
 				q.feld[i][j] = matrix.feld[i][j] + feld[i][j];
 			}
 		}
+		return q;
 	}
 
 
